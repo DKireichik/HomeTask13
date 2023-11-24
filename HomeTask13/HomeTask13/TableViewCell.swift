@@ -17,7 +17,7 @@ class TableViewCell: UITableViewCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         
-        addSubview(notes)
+        contentView.addSubview(notes)
         notes.translatesAutoresizingMaskIntoConstraints = false
         notes.backgroundColor = .gray
         notes.text = "Notes:"
