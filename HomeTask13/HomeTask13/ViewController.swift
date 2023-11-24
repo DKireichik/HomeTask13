@@ -135,7 +135,7 @@ import UIKit
 //   
 //               }
 //           }
-    
+//    
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate{
     var tableView = UITableView()
     
@@ -172,10 +172,14 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
  func tableView(_ tableView: UITableView,
             viewForHeaderInSection section: Int) -> UIView? {
        let header = Header()
+//     tableView.dequeueReusableHeaderFooterView(withIdentifier:
+//                   "sectionHeader") as! MyCustomHeader
        return header
     }
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let footer = Footer()
+//        tableView.dequeueReusableHeaderFooterView(withIdentifier:
+//                    "sectionFooter") as! MyCustomFooter
         return footer
     }
   
